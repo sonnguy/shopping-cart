@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Unicorn Embroidery",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 80,
+        "oldPrice": 80,
+        "img": "https://images.leflair.vn/w1350/q85/5d56740f541c466e5ef935fb.jpg",
+        "inventory": 2,
+        "discount": 0
+    },
+    {
+        "id": 2,
+        "title": "Bodycon Beige Zipline Printed",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 120,
+        "oldPrice": 240,
+        "img": "https://images.leflair.vn/w1350/q85/5dd3b1e883a722001a07aa84.jpg",
+        "inventory": 0,
+        "discount": 50
+    },
+    {
+        "id": 3,
+        "title": "Box-Pleated Hem",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 110,
+        "oldPrice": 330,
+        "img": "https://images.leflair.vn/w1350/q85/5dd397a530f61615f82880fd.jpg",
+        "inventory": 6,
+        "discount": 33
+    },
+    {
+        "id": 4,
+        "title": "Midi French Countryside",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 180,
+        "oldPrice": 180,
+        "img": "https://images.leflair.vn/w1350/q85/5dd397dcf3cb6f627b10727d.JPG",
+        "inventory": 4,
+        "discount": 0
+    },
+    {
+        "id": 5,
+        "title": "Organic Cotton",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 70,
+        "oldPrice": 137,
+        "img": "https://images.leflair.vn/w1350/q85/5dd64079d90d3e001a720ffd.jpg",
+        "inventory": 1,
+        "discount": 51
+    },
+    {
+        "id": 6,
+        "title": "Maxi Simple Charm",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 110,
+        "oldPrice": 110,
+        "img": "https://images.leflair.vn/w1350/q85/5dd3b1cbc4e053001a2c4879.jpg",
+        "inventory": 2,
+        "discount": 0
+    },
+    {
+        "id": 7,
+        "title": "Maxi Pastel Cool For Summer",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 100,
+        "oldPrice": 100,
+        "img": "https://images.leflair.vn/w1350/q85/5d56738d1d68feccd00082bd.jpg",
+        "inventory": 0,
+        "discount": 0
+    },
+    {
+        "id": 8,
+        "title": "Freesia Frill Wrap Lace",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 110,
+        "oldPrice": 268,
+        "img": "https://images.leflair.vn/w1350/q85/5da3e7445cda684d8b4bd7d9.jpg",
+        "inventory": 3,
+        "discount": 41
+    },
+    {
+        "id": 9,
+        "title": "Freesia Frill For Summer",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        "price": 115,
+        "oldPrice": 115,
+        "img": "https://images.leflair.vn/w1350/q85/5da05fdc55351e46cec38ceb.jpg",
+        "inventory": 5,
+        "discount": 0
+    }
+]
