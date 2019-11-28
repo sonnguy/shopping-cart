@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { fetchProductById, addToCart } from '../actions/productAction';
+import { fetchProductById, addToCart } from '../../actions/productAction';
 import ProductDiscountTag from './ProductDiscountTag';
 import ProductStatus from './ProductStatus';
 class ProductDetail extends React.Component {

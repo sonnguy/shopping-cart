@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { fetchProducts } from '../actions/productAction';
+import { fetchProducts } from '../../actions/productAction';
 import CheckOutForm from './CheckoutForm';
 
 class CheckOut extends React.Component {

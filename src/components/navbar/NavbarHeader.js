@@ -1,8 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import cartIcon from '../assets/shopping-bag.svg';
-import { showCartModal } from './../actions/productAction';
+import cartIcon from '../../assets/shopping-bag.svg';
+import { showCartModal } from '../../actions/productAction';
 import {
     Link
 } from "react-router-dom";

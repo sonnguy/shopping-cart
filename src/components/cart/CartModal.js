@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { removeItem, subtractQuantity, addQuantity, checkStockAvailable } from '../actions/productAction';
+import { removeItem, subtractQuantity, addQuantity, checkStockAvailable } from '../../actions/productAction';
 import CartItem from './CartItem';
 import CartModalAlert from './CartModalAlert';
 import { withRouter } from "react-router-dom";
@@ -48,9 +48,8 @@ class CartModal extends React.Component {
     render() {
         const products = this.props.products.map((item) => {
             return (
-                <div>
+                <div key={item.id}>
                     <CartItem
-                        key={item.id}
                         product={item}
                         showCartWarning={this.props.showCartWarning}
                         onRemoveClick={() => this.handleRemoveClick(item.id)}

@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarHeader from './components/NavbarHeader';
-import Home from './components/Home';
-import CheckOut from './components/CheckOut';
-import OrderConfirm from './components/OrderConfirm';
-import ProductDetail from './components/ProductDetail';
+import NavbarHeader from './components/navbar/NavbarHeader';
+import Product from './components/product';
+import CheckOut from './components/checkOut';
+import OrderConfirm from './components/order/OrderConfirm';
+import ProductDetail from './components/product/ProductDetail';
 import { connect } from 'react-redux';
 import { hideCartModal } from './actions/productAction';
 import {
@@ -12,7 +12,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import CartModal from './components/CartModal';
+import CartModal from './components/cart/CartModal';
 class App extends React.Component {
   render() {
     return (
@@ -21,7 +21,7 @@ class App extends React.Component {
           <NavbarHeader />
 
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Product} />
             <Route path="/checkout" component={CheckOut} />
             <Route path="/orderconfirm" component={OrderConfirm} />
             <Route path="/detail/:id" component={ProductDetail} />

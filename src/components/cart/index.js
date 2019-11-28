@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { fetchProducts } from '../actions/productAction';
-import images from '../api/data/images';
+import { fetchProducts } from '../../actions/productAction';
 import ProductItem from './ProductItem';
 
 class Cart extends React.Component {
@@ -14,7 +13,7 @@ class Cart extends React.Component {
 
         let products = this.props.products.map((item, index) => {
             return (
-                <ProductItem key={item.id} img={images[index]} onAddToCartClick={() => this.handleAddToCardClick(item.id)} product={item} />
+                <ProductItem key={item.id} onAddToCartClick={() => this.handleAddToCardClick(item.id)} product={item} />
             )
         })
         return (

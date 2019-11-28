@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { fetchProducts, addToCart } from '../actions/productAction';
+import { fetchProducts, addToCart } from '../../actions/productAction';
 import ProductItem from './ProductItem';
 
-class Home extends React.Component {
+class Product extends React.Component {
 
     componentDidMount() {
         this.props.fetchProducts();
@@ -48,4 +48,4 @@ const mapDispatchToProps = {
     addToCart
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Product)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Form, Button } from 'react-bootstrap';
 import { withRouter } from "react-router-dom";
-import { purchaseOrder } from '../actions/productAction';
+import { purchaseOrder } from '../../actions/productAction';
 import { connect } from 'react-redux';
 
 class CheckOutForm extends React.Component {
