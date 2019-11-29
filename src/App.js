@@ -5,14 +5,14 @@ import Product from './components/product';
 import CheckOut from './components/checkOut';
 import OrderConfirm from './components/order/OrderConfirm';
 import ProductDetail from './components/product/ProductDetail';
+import CartModal from './components/cart/CartModal';
 import { connect } from 'react-redux';
-import { hideCartModal } from './actions/productAction';
 import {
   BrowserRouter,
   Switch,
   Route
 } from "react-router-dom";
-import CartModal from './components/cart/CartModal';
+
 class App extends React.Component {
   render() {
     return (
@@ -26,7 +26,7 @@ class App extends React.Component {
             <Route path="/orderconfirm" component={OrderConfirm} />
             <Route path="/detail/:id" component={ProductDetail} />
           </Switch>
-          <CartModal onHide={() => this.props.hideCartModal()} show={this.props.showCartModal} />
+          <CartModal show={this.props.showCartModal} />
         </div>
       </BrowserRouter>
     );
@@ -37,8 +37,5 @@ const mapStateToProps = state => ({
   showCartModal: state.product.showCartModal,
 });
 
-const mapDispatchToProps = {
-  hideCartModal,
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);
