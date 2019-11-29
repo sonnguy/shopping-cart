@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { removeItem, subtractQuantity, addQuantity, checkStockAvailable } from '../../actions/productAction';
+import { removeItem, subtractQuantity, addQuantity, checkStockAvailable, hideCartModal } from '../../actions/productAction';
 import CartItem from './CartItem';
 import CartModalAlert from './CartModalAlert';
 import { withRouter } from "react-router-dom";
@@ -15,13 +15,13 @@ class CartModal extends React.Component {
     handleCheckoutClick() {
         let path = `/checkout`;
         this.props.history.push(path);
-        this.props.onHide();
+        this.props.hideCartModal();
     }
 
     handleContinueShoppingClick() {
         let path = `/`;
         this.props.history.push(path);
-        this.props.onHide();
+        this.props.hideCartModal();
     }
 
 
@@ -63,8 +63,8 @@ class CartModal extends React.Component {
         })
         return (
             <Modal
-                show={this.props.show}
-                onHide={this.props.onHide}
+                show={this.props.showCartModal}
+                onHide={() => this.props.hideCartModal()}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
@@ -104,13 +104,15 @@ class CartModal extends React.Component {
 const mapStateToProps = state => ({
     products: state.product.addedItems,
     total: state.product.total,
-    showCartWarning: state.product.showCartWarning
+    showCartWarning: state.product.showCartWarning,
+    showCartModal: state.product.showCartModal,
 });
 
 const mapDispatchToProps = {
     removeItem,
     subtractQuantity,
     addQuantity,
+    hideCartModal
 };
 
 

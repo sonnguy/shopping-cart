@@ -45,7 +45,12 @@ class ProductDetail extends React.Component {
                                 </div>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <Button disabled={product.inventory === 0} onClick={() => this.handleAddToCardClick(product.id)} variant="dark" style={{ borderRadius: 0, width: '100%' }}>ADD TO CART</Button>
+                                {
+                                    product.inventory === 0 ?
+                                        <Button disabled variant="secondary" style={{ borderRadius: 0, width: '100%' }}>SOLD OUT</Button>
+                                        :
+                                        <Button onClick={() => this.handleAddToCardClick(product.id)} variant="dark" style={{ borderRadius: 0, width: '100%' }}>ADD TO CART</Button>
+                                }
                             </div>
                         </div>
                     </Col>

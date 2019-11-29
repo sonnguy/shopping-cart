@@ -16,10 +16,7 @@ class NavbarHeader extends React.Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Link className="nav-link" to="/">Sales</Link>
-                            <Link className="nav-link" to="/">Shoes</Link>
-                            <Link className="nav-link" to="/">Clothes</Link>
-                            <Link className="nav-link" to="/">Accessories</Link>
+                            <Link className="nav-link" to="/sales">Clothes</Link>
                         </Nav>
                         <Nav>
                             <Nav.Link >
@@ -28,7 +25,6 @@ class NavbarHeader extends React.Component {
                                     <img className="cart-img" src={cartIcon} alt="" />
                                 </div>
                             </Nav.Link>
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

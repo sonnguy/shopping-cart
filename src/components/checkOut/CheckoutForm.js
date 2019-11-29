@@ -43,14 +43,13 @@ class CheckOutForm extends React.Component {
     handleSubmit = event => {
         const form = event.currentTarget;
         event.preventDefault();
-        if (form.checkValidity() === false) {
-            event.stopPropagation();
-        }
         this.setState({ validated: true });
-        this.props.purchaseOrder();
-        localStorage.setItem('userPaymentInfo', JSON.stringify(this.state.fields));
-        let path = `/orderconfirm`;
-        this.props.history.push(path);
+        if (form.checkValidity() === true) {
+            this.props.purchaseOrder();
+            localStorage.setItem('userPaymentInfo', JSON.stringify(this.state.fields));
+            let path = `/orderconfirm`;
+            this.props.history.push(path);
+        }
     };
     render() {
         return (
@@ -171,17 +170,11 @@ class CheckOutForm extends React.Component {
                 <div className="mb-3">
                     <Form.Check
                         custom
-                        name="isSaveShippingAddress"
-                        checked={this.state.fields.isSaveShippingAddress}
-                        onChange={this.handleInputChange}
                         type="checkbox"
                         id={1}
                         label={`Shipping address is the same as my billing address`}
                     />
                     <Form.Check
-                        name="isSaveUserInfo"
-                        checked={this.state.fields.isSaveUserInfo}
-                        onChange={this.handleInputChange}
                         custom
                         type="checkbox"
                         id={2}
@@ -192,20 +185,14 @@ class CheckOutForm extends React.Component {
                 <h4 className="mb-3">Payment</h4>
                 <div className="d-block my-3">
                     <Form.Check
-                        checked={this.state.fields.paymentMethod === 'credit'}
                         name="paymentMethod"
-                        value={'credit'}
-                        onChange={this.handleInputChange}
                         custom
                         type="radio"
                         id={'credit'}
                         label={`Credit card`}
                     />
                     <Form.Check
-                        checked={this.state.fields.paymentMethod === 'debit'}
                         name="paymentMethod"
-                        value={'debit'}
-                        onChange={this.handleInputChange}
                         custom
                         type="radio"
                         id={'debit'}
@@ -216,9 +203,6 @@ class CheckOutForm extends React.Component {
                     <Form.Group as={Col} md="6" controlId="validationCustom08">
                         <Form.Label>Name on card <small className="text-muted">Full name as displayed on card</small></Form.Label>
                         <Form.Control
-                            name="nameOncard"
-                            value={this.state.fields.nameOncard}
-                            onChange={this.handleInputChange}
                             required
                             type="text"
                             placeholder=""
@@ -230,9 +214,6 @@ class CheckOutForm extends React.Component {
                     <Form.Group as={Col} md="6" controlId="validationCustom09">
                         <Form.Label>Credit card number</Form.Label>
                         <Form.Control
-                            name="cardNumber"
-                            value={this.state.fields.cardNumber}
-                            onChange={this.handleInputChange}
                             required
                             type="text"
                             placeholder=""
@@ -246,9 +227,6 @@ class CheckOutForm extends React.Component {
                     <Form.Group as={Col} md="3" controlId="validationCustom10">
                         <Form.Label>Expiration </Form.Label>
                         <Form.Control
-                            name="cardExpiration"
-                            value={this.state.fields.cardExpiration}
-                            onChange={this.handleInputChange}
                             required
                             type="text"
                             placeholder=""
@@ -260,9 +238,6 @@ class CheckOutForm extends React.Component {
                     <Form.Group as={Col} md="3" controlId="validationCustom11">
                         <Form.Label>CVV</Form.Label>
                         <Form.Control
-                            name="cvvNumber"
-                            value={this.state.fields.cvvNumber}
-                            onChange={this.handleInputChange}
                             required
                             type="text"
                             placeholder=""
