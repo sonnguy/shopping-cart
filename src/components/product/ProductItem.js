@@ -27,7 +27,12 @@ class ProductItem extends React.Component {
                             <ProductStatus inventory={product.inventory} />
                         </div>
                     </Card.Body>
-                    <Button disabled={product.inventory === 0} onClick={onAddToCartClick} variant="dark" style={{ borderRadius: 0 }}>ADD TO CART</Button>
+                    {
+                        product.inventory === 0 ?
+                            <Button disabled variant="secondary" style={{ borderRadius: 0 }}>SOLD OUT</Button>
+                            :
+                            <Button onClick={onAddToCartClick} variant="dark" style={{ borderRadius: 0 }}>ADD TO CART</Button>
+                    }
                 </Card>
             </Col>
         )

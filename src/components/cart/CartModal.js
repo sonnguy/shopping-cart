@@ -15,13 +15,13 @@ class CartModal extends React.Component {
     handleCheckoutClick() {
         let path = `/checkout`;
         this.props.history.push(path);
-        this.props.onHide();
+        this.props.hideCartModal();
     }
 
     handleContinueShoppingClick() {
         let path = `/`;
         this.props.history.push(path);
-        this.props.onHide();
+        this.props.hideCartModal();
     }
 
 
@@ -63,7 +63,7 @@ class CartModal extends React.Component {
         })
         return (
             <Modal
-                show={this.props.show}
+                show={this.props.showCartModal}
                 onHide={() => this.props.hideCartModal()}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
@@ -104,7 +104,8 @@ class CartModal extends React.Component {
 const mapStateToProps = state => ({
     products: state.product.addedItems,
     total: state.product.total,
-    showCartWarning: state.product.showCartWarning
+    showCartWarning: state.product.showCartWarning,
+    showCartModal: state.product.showCartModal,
 });
 
 const mapDispatchToProps = {

@@ -6,7 +6,6 @@ import CheckOut from './components/checkOut';
 import OrderConfirm from './components/order/OrderConfirm';
 import ProductDetail from './components/product/ProductDetail';
 import CartModal from './components/cart/CartModal';
-import { connect } from 'react-redux';
 import {
   BrowserRouter,
   Switch,
@@ -19,23 +18,18 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <NavbarHeader />
-
           <Switch>
             <Route exact path="/" component={Product} />
+            <Route exact path="/sales" component={Product} />
             <Route path="/checkout" component={CheckOut} />
             <Route path="/orderconfirm" component={OrderConfirm} />
             <Route path="/detail/:id" component={ProductDetail} />
           </Switch>
-          <CartModal show={this.props.showCartModal} />
+          <CartModal />
         </div>
       </BrowserRouter>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  showCartModal: state.product.showCartModal,
-});
-
-
-export default connect(mapStateToProps)(App);
+export default App;
