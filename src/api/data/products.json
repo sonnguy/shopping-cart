@@ -15,7 +15,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 120,
         "oldPrice": 240,
-        "img": "https://images.leflair.vn/w1350/q85/5d5672bd541c460931f935cd.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5ddf9c5415d173001a556185.jpg",
         "inventory": 0,
         "discount": 50
     },
@@ -35,7 +35,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 180,
         "oldPrice": 180,
-        "img": "https://images.leflair.vn/w1350/q85/5da05274e7e2b92c10714613.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5ddf9c49b94fec001af3834e.jpg",
         "inventory": 4,
         "discount": 0
     },
@@ -45,7 +45,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 70,
         "oldPrice": 137,
-        "img": "https://images.leflair.vn/w1350/q85/5dd64079d90d3e001a720ffd.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5ddf9c5e7f4f4f001a98ba95.jpg",
         "inventory": 1,
         "discount": 51
     },
@@ -55,7 +55,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 110,
         "oldPrice": 110,
-        "img": "https://images.leflair.vn/w1350/q85/5dd3b1cbc4e053001a2c4879.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5da04e242908eca37c5d3abb.jpg",
         "inventory": 2,
         "discount": 0
     },
@@ -75,7 +75,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 110,
         "oldPrice": 268,
-        "img": "https://images.leflair.vn/w1350/q85/5d56738d1d68feccd00082bd.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5720c477c92fc80e00e3fa5b.jpg",
         "inventory": 3,
         "discount": 41
     },
@@ -85,7 +85,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 115,
         "oldPrice": 115,
-        "img": "https://images.leflair.vn/w1350/q85/5da04e242908eca37c5d3abb.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5da060e42908ec35fe5d474f.jpg",
         "inventory": 5,
         "discount": 0
     }
