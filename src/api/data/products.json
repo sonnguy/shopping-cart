@@ -5,7 +5,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 80,
         "oldPrice": 80,
-        "img": "https://images.leflair.vn/w1350/q85/5d56740f541c466e5ef935fb.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5da13ba65cda683d304b9eb0.jpg",
         "inventory": 2,
         "discount": 0
     },
@@ -35,7 +35,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 180,
         "oldPrice": 180,
-        "img": "https://images.leflair.vn/w1350/q85/5ddf9c49b94fec001af3834e.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5da582fe5cda68d9424c2049.jpg",
         "inventory": 4,
         "discount": 0
     },
@@ -45,7 +45,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 70,
         "oldPrice": 137,
-        "img": "https://images.leflair.vn/w1350/q85/5ddf9c5e7f4f4f001a98ba95.jpg",
+        "img": "hhttps://images.leflair.vn/w1350/q85/5720c477c92fc80e00e3fa5b.jpg",
         "inventory": 1,
         "discount": 51
     },
@@ -85,7 +85,7 @@
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
         "price": 115,
         "oldPrice": 115,
-        "img": "https://images.leflair.vn/w1350/q85/5da060e42908ec35fe5d474f.jpg",
+        "img": "https://images.leflair.vn/w1350/q85/5da582fe5cda68d9424c2049.jpg",
         "inventory": 5,
         "discount": 0
     }
